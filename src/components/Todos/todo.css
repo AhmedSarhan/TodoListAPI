@@ -1,0 +1,22 @@
+.todo {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.7);
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #000;
+  max-width: 400px;
+  position: relative;
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through double;
+  color: #636e72;
+}
+
+.todo h3 {
+  text-align: center;
+}
