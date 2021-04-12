@@ -56,7 +56,7 @@ const Data = ({
         }
       })
       .catch((err) => {
-        console.log(err);
+        //console.log(err);
         dispatchAnewMessage({
           text: `Error deleting Profile: ${err}`,
           type: 'error',

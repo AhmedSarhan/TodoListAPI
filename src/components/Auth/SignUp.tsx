@@ -67,7 +67,7 @@ const SignUp = () => {
     setShowPassWord((prev) => !prev);
   };
   const signUpHandler = async (data: FormData, e: any) => {
-    console.log(data);
+    //console.log(data);
     setErrorMessage(null);
     await axios
       .post('/user/register', {
@@ -77,7 +77,7 @@ const SignUp = () => {
         age: data.age,
       })
       .then((res) => {
-        console.log(res.data);
+        //console.log(res.data);
         e.target.reset();
         setErrorMessage(null);
         axios
@@ -86,7 +86,7 @@ const SignUp = () => {
             password: data.password,
           })
           .then((res) => {
-            console.log(res.data);
+            //console.log(res.data);
             setUserData({ ...res.data });
             toggleLogIn(true);
             setErrorMessage(null);

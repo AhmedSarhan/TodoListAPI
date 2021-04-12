@@ -62,7 +62,7 @@ const Login = () => {
         password: data.password,
       })
       .then((res) => {
-        console.log(res.data);
+        //console.log(res.data);
         e.target.reset();
         setUserData({ ...res.data });
         toggleLogIn(true);

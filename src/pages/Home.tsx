@@ -47,7 +47,7 @@ const Home = () => {
         setReFetching(false);
       })
       .catch((err) => {
-        console.log(err.message);
+        //console.log(err.message);
       });
   };
   const refetchTodosHandler = (completed: boolean | undefined) => {

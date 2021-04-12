@@ -94,9 +94,9 @@ const EditData = ({
         }
       )
       .then((res) => {
-        console.log(res.data);
+        //console.log(res.data);
         if (res.data && res.data?.success) {
-          // console.log({ ...res.data.data });
+          // //console.log({ ...res.data.data });
           refetch();
           setUserData({
             user: {
@@ -115,7 +115,7 @@ const EditData = ({
         }
       })
       .catch((err) => {
-        console.log(err);
+        //console.log(err);
         dispatchAnewMessage({
           text: `Error updating Profile: ${err}`,
           type: 'error',

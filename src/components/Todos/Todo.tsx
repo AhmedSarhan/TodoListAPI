@@ -10,7 +10,7 @@ const Todo = ({ todo, refetch }: { todo: TodoType; refetch: () => void }) => {
   const { userState } = useContext(AppContext);
   const deleteTodoHandler = async (e: React.SyntheticEvent) => {
     e.stopPropagation();
-    console.log('deleting');
+    //console.log('deleting');
     axios
       .delete(`/task/${todo._id}`, {
         headers: {
@@ -21,11 +21,11 @@ const Todo = ({ todo, refetch }: { todo: TodoType; refetch: () => void }) => {
         refetch();
       })
       .catch((err) => {
-        console.log(err);
+        //console.log(err);
       });
   };
   const completeTodoHandler = async (e: React.SyntheticEvent) => {
-    console.log('completing');
+    //console.log('completing');
     axios
       .put(
         `/task/${todo._id}`,
@@ -42,7 +42,7 @@ const Todo = ({ todo, refetch }: { todo: TodoType; refetch: () => void }) => {
         refetch();
       })
       .catch((err) => {
-        console.log(err);
+        //console.log(err);
       });
   };
   return (

@@ -109,7 +109,7 @@ const AvatarUpdate = ({ user }: { user: UserType }) => {
         setAvatarState(imageUri);
       })
       .catch((err) => {
-        // console.log(err.response.data);
+        // //console.log(err.response.data);
         dispatchAnewMessage({
           type: 'error',
           text:
@@ -121,12 +121,12 @@ const AvatarUpdate = ({ user }: { user: UserType }) => {
   };
   // upload the image to server and preview it in the ui
   const updateAvatarHandler = async (image: any) => {
-    console.log(image);
+    //console.log(image);
     // setSelectedFile(image);
     const formData = new FormData();
 
     formData.append('avatar', image);
-    console.log(formData);
+    //console.log(formData);
     await axios
       .post('/user/me/avatar', formData, {
         headers: {

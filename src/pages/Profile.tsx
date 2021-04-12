@@ -19,7 +19,7 @@ const Profile = () => {
         },
       })
       .then((res) => {
-        console.log(res.data);
+        //console.log(res.data);
         setUserData({
           name: res.data?.name,
           age: res.data?.age,
@@ -28,7 +28,7 @@ const Profile = () => {
         });
       })
       .catch((err) => {
-        console.log(err);
+        //console.log(err);
       });
   };
   const {

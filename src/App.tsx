@@ -13,8 +13,8 @@ import CustomSnackBarMessage from './components/common/CustomSnackBarMessage';
 axios.defaults.baseURL = process.env.REACT_APP_API_URI;
 
 function App() {
-  console.log(axios.defaults.baseURL);
-  console.log(process.env.REACT_APP_API_URI);
+  //console.log(axios.defaults.baseURL);
+  //console.log(process.env.REACT_APP_API_URI);
   const client = new QueryClient({
     defaultOptions: {
       queries: {

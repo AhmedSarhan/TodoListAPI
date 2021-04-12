@@ -18,7 +18,7 @@ export const AppReducer = (state: StateType, action: Action) =>
       case ACTION_TYPES.UPDATE_USER:
         let newUser;
         if (action.payload) {
-          console.log('pay', action.payload)
+          //console.log('pay', action.payload)
           newUser = {
             token: action.payload.token,
             name: action.payload.user.name,

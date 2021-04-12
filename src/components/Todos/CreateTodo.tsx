@@ -55,7 +55,7 @@ const CreateTodo = ({ refetch }: { refetch: () => void }) => {
         refetch();
       })
       .catch((err) => {
-        console.log(err.data);
+        //console.log(err.data);
       });
   };
   return (

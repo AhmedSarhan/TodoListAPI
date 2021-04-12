@@ -47,7 +47,7 @@ const LoggedIn = () => {
         }
       )
       .then((res) => {
-        console.log(res.data);
+        //console.log(res.data);
         toggleLogIn(false);
         setUserData(null);
         localStorage.removeItem('user');
@@ -65,7 +65,7 @@ const LoggedIn = () => {
         setAvatarState(imageUri);
       })
       .catch((err) => {
-        // console.log(err.response.data);
+        // //console.log(err.response.data);
         dispatchAnewMessage({
           type: 'error',
           text:
